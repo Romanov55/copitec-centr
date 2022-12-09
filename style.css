@@ -1,0 +1,165 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'Futura-Bold';
+  src: url("../fonts/Futura/futura-pt-demi.ttf");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Futura-Regular';
+  src: url("../fonts/Futura/futura-pt-cond-book-oblique.ttf");
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Futura-Bold', sans-serif;
+}
+
+#red-menu {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    color: white;
+    background-color: #da1515;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.7);
+}
+
+    .menu-item {
+        padding: 0px 10px;
+    }
+
+    #adress-menu {
+        padding-left: 200px;
+    }
+
+#white-info {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+    #name {
+        font-size: 30px
+    }
+
+    .head-item {
+        padding: 20px 40px;
+        line-height: 50%;
+    }
+
+.red-color {
+    color: red;
+}
+
+.grey-color {
+    color: grey;
+}
+
+#head-section {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    background-color: #da1515;
+    border-top: solid grey;
+    border-bottom: solid grey;
+}
+
+.services {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(218, 240, 233);
+    color: rgb(49, 45, 45);
+}
+
+    .services-item {
+        margin: 10px 15px;
+        padding: 0;
+        width: 350px;
+        height: 150px;
+        border: solid 1px;
+        box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.7);
+    }
+
+    .servies-name {
+        margin: 0;
+        padding: 10px 0 0 10px;
+        border-top: solid grey;
+    }
+
+    .services-item:hover .servies-name{
+        background-color: #da1515;
+        border-bottom: solid grey;
+    }
+
+    .par-text {
+        padding: 0 0 10px 10px;
+        font-size: small;
+        width: 150px;
+        line-height: 80%;
+    }
+
+    #printer {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        vertical-align: middle;
+        width: auto;
+    }
+
+#benefits-head {
+    text-align: center;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    color: rgb(66, 61, 61);
+}
+
+    .benefits-item {
+        display: flex;
+    }
+
+    #head-text {
+        color: rgb(66, 61, 61);
+    }
+
+    .advantage {
+        padding: 0 30px;
+        width: 350px;
+    }
+
+footer {
+    margin: 0 0 0 0;
+    color: white;
+    background-color: rgb(94, 85, 85);
+}
+
+#footer-menu {
+    display: flex;
+    justify-content: center;
+}
+
+    .footer-item {
+        padding: 50px 50px 20px 50px;
+    }
+
+    #ad {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    #signature {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+
+    #creator {
+        padding-left: 300px;
+    }
