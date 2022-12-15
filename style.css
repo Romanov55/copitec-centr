@@ -166,7 +166,7 @@ body {
         margin: 10px 15px;
         padding: 0;
         width: 350px;
-        height: 21.5vh;
+        height: 150px;
         border: solid 1px;
         color: black;
         box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.7);
@@ -274,7 +274,7 @@ footer {
 .slides {
         position: absolute;
         margin: 0;
-        height: 70vh;
+        height: 500px;
         width: 100%;
         z-index: 0;
     }
@@ -286,7 +286,7 @@ footer {
     }
 
     #slides {
-        height: 70vh;
+        height: 500px;
         width: 100%;
     }
 
@@ -670,8 +670,15 @@ footer {
     }
 
     .photo {
-        width: 16vw;
-        height: 14vh;
+        width: 80px;
+        height: 80px;
+        margin: 2px 2px;
+        padding: 1px;
+    }
+    
+    .photo-copi {
+        margin: 0;
+        padding: 0;
     }
 
     .info-description {
@@ -686,7 +693,7 @@ footer {
     .services-item {
         width: 300px;
         padding: 0;
-        margin: 0;
+        margin: 10px 0;
     }
 
     .services-img {
