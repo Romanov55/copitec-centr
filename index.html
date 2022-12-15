@@ -13,31 +13,55 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <nav role="anasistemu">
+        <div id="navigatsionaya">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="navigation">
+                <a href="index.html"><li>Главная</li></a>
+                <a href="documentPrinting.html"><li>Печать</li></a>
+                <a href="cartridges.html"><li>Заправка картриджей</li></a>
+                <a href="printerRepair.html"><li>Ремонт принтеров</li></a>
+                <br>
+                <br>
+                <a href="price.html"><li>Цены</li></a>
+                <a href="contants.html"><li>Контакты</li></a>
+                <a href="aboutAs.html"><li>О нас</li></a>
+            </ul>
+        </div>
+    </nav>
     <header>
-        <div id="top-menu">
-            <a href="payment.html">
-                <h3 class="top-item"><i class="fa-solid fa-wallet top-icon"></i> ОПЛАТА</h3>
-            </a>
-            <a href="contants.html">
-                <h3 class="top-item"><i class="fa-solid fa-address-book top-icon"></i> КОНТАКТЫ</h3>
-            </a>
-            <a href="price.html">
-                <h3 class="top-item"><i class="fa-solid fa-money-check-dollar top-icon"></i> ЦЕНЫ</h3>
-            </a>
-            <a href="contants.html">
-                <h3 class="top-item" id="adress-menu"><i class="fa-solid fa-location-dot top-icon"></i> КОМСОМОЛЬСКИЙ ПРОСПЕКТ 34</h3>
-            </a>
-            <a href="contants.html">
-                <h3 class="top-item"><i class="fa-solid fa-square-phone top-icon"></i> 9-000-6, 9-100-9</h3>
-            </a>
-            <a href="contants.html">
-                <h3 class="top-item"><i class="fa-solid fa-envelope top-icon"></i> kopi-center-1@mail.ru</h3>
-            </a>
+        <div class="empty-menu"></div>
+        <div class="top-menu">
+            <div class="top-info">
+                <a href="payment.html">
+                    <h3 class="top-item"><i class="fa-solid fa-wallet top-icon"></i> ОПЛАТА</h3>
+                </a>
+                <a href="contants.html">
+                    <h3 class="top-item"><i class="fa-solid fa-address-book top-icon"></i> КОНТАКТЫ</h3>
+                </a>
+                <a href="price.html">
+                    <h3 class="top-item"><i class="fa-solid fa-money-check-dollar top-icon"></i> ЦЕНЫ</h3>
+                </a>
+            </div>
+            <div class="top-info">
+                <a href="contants.html">
+                    <h3 class="top-item"><i class="fa-solid fa-location-dot top-icon"></i> КОМСОМОЛЬСКИЙ ПРОСПЕКТ 34</h3>
+                </a>
+                <a href="contants.html">
+                    <h3 class="top-item"><i class="fa-solid fa-square-phone top-icon"></i> 9-000-6, 9-100-9</h3>
+                </a>
+                <a href="contants.html">
+                    <h3 class="top-item"><i class="fa-solid fa-envelope top-icon"></i> kopi-center-1@mail.ru</h3>
+                </a>
+            </div>
         </div>
         <div>
             <a href="index.html" class="name">
-                <h2><i><span class="red-color">Копи</span>Тек Центр</i></h2>
-                <h3>Копировальный центр</h3>
+                <h1><i><span class="red-color">КопиТек Центр</span></i></h1>
+                <h2>Копировальный центр</h2>
             </a>
             <div id="slides">
                 <img class="slides" src='img/img1.jpg' id="image_1" title="slide1">
@@ -80,100 +104,94 @@
             <div>
                 <div class="services">
                     <div class="main-item">
-                        <div class="services-item">
-                            <img src="img/printer.png" alt="" class="left-img">
+                        <a href="documentPrinting.html" class="services-item">
+                            <img src="img/printer.png" alt="" class="services-img">
                             <h3 class="servies-name">ПЕЧАТЬ И КСЕРОКОПИЯ</h3>
                             <p class="par-text">Ксерокопия и печать документов в нашем копировальном центре осуществляется на профессиональном оборудовании Xerox, HP, Epson</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item">
-                            <img src="img/photoprint.png" alt="" class="middle-img">
+                        <a href="photoprint.html" class="services-item">
+                            <img src="img/photoprint.png" alt="" class="services-img">
                             <h3 class="servies-name">ФОТОПЕЧАТЬ</h3>
                             <p class="par-text">Печать ваших фотографий на формате: А4, 10х15</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="drawing">
-                            <img src="img/drawing.png" alt="" class="right-img">
+                        <a href="drawing.html" class="services-item" id="drawing">
+                            <img src="img/drawing.png" alt="" class="services-img">
                             <h3 class="servies-name" >ПЕЧАТЬ ЧЕРТЕЖЕЙ</h3>
                             <p class="par-text">Печать ваших чертежей осуществляется на бумаге любого формата</p>
-                        </div>
+                        </a>
                     </div>
-                </div>
-                <div class="services">
                     <div class="main-item">
-                        <div class="services-item" id="binding">
-                            <img src="img/cartridge.png" alt="cartridge" class="left-img">
+                        <a href="cartridges.html" class="services-item" id="binding">
+                            <img src="img/cartridge.png" alt="cartridge" class="services-img">
                             <h3 class="servies-name">ЗАПРАВКА КАРТРИДЖЕЙ</h3>
                             <p class="par-text">Качественная и профессиональная запрвка ваших картриджей</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="binding">
-                            <img src="img/printRepair.png" alt="print repair" class="middle-img">
+                        <a href="printerRepair.html" class="services-item" id="binding">
+                            <img src="img/printRepair.png" alt="print repair" class="services-img">
                             <h3 class="servies-name">РЕМОНТ  ПРИНТЕРОВ</h3>
                             <p class="par-text">Профессиональный ремонт принтеров с гарантией</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="call">
-                            <img src="img/printers.png" alt="printers" class="right-img">
+                        <a href="contants.html" class="services-item" id="call">
+                            <img src="img/printers.png" alt="printers" class="services-img">
                             <h3 class="servies-name">ПРОДАЖА ПРИНТЕРОВ, КАРТРИДЖЕЙ</h3>
                             <p class="par-text">В нашем ассортименте имеются новые картриджи, принтеры на любой вкус в идеальном состоянии с гарантией</p>
-                        </div>
+                        </a>
                     </div>
-                </div>
-                <div class="services">
                     <div class="main-item">
-                        <div class="services-item">
-                            <img src="img/big-printer.png" alt="" class="left-img">
+                        <a href="largeFOrmat.html" class="services-item">
+                            <img src="img/big-printer.png" alt="" class="services-img">
                             <h3 class="servies-name">ШИРОКОФОРМАТНАЯ ПЕЧАТЬ</h3>
                             <p class="par-text">В нашем копи центре вы можете распечатать почти любой формат печати</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="laminate">
-                            <img src="img/laminate.png" alt="" class="middle-img">
+                        <a href="laminate.html" class="services-item" id="laminate">
+                            <img src="img/laminate.png" alt="" class="services-img">
                             <h3 class="servies-name">ЛАМИНИРОВАНИЕ</h3>
                             <p class="par-text">Ламинирование осуществляется на форматах: А5, A4, A3</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="scanning">
-                            <img src="img/scanning.png" alt="" class="right-img">
+                        <a href="scaning.html" class="services-item" id="scanning">
+                            <img src="img/scanning.png" alt="" class="services-img">
                             <h3 class="servies-name">СКАНИРОВАНИЕ</h3>
                             <p class="par-text">Для сканирования мы применяем профессиональное оборудование, которое позволяет выполнить сканирование до формата A0</p>
-                        </div>
+                        </a>
                     </div>
-                </div>
-                <div class="services">
                     <div class="main-item">
-                        <div class="services-item" id="binding">
-                            <img src="img/certificate.png" alt="" class="left-img">
+                        <a href="diplomas.html" class="services-item" id="binding">
+                            <img src="img/certificate.png" alt="" class="services-img">
                             <h3 class="servies-name">ГРАМОТЫ, ДИПЛОМЫ</h3>
                             <p class="par-text">Предлагаем оперативную печать сертификатов, грамот и дипломов</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="binding">
-                            <img src="img/binding.png" alt="" class="middle-img">
+                        <a href="stitching.html" class="services-item" id="binding">
+                            <img src="img/binding.png" alt="" class="services-img">
                             <h3 class="servies-name">ПЕРЕПЛЕТ</h3>
                             <p class="par-text">Качественная брошюровка и твёрдый переплёт для дипломов и документов</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="main-item">
-                        <div class="services-item" id="call">
-                            <img src="img/call.png" alt="" class="right-img">
+                        <a href="contants.html" class="services-item" id="call">
+                            <img src="img/call.png" alt="" class="services-img">
                             <h3 class="servies-name">НЕ НАШЛИ? ЗВОНИТЕ</h3>
                             <p class="par-text">Если не нашли нужную Вам услугу Вы можете позвонить нам и уточнить любую информацию</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8082.476704301166!2d63.09953042509741!3d52.967589074593185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43cd02f77c253f25%3A0xa9a671695b210624!2z0JrQvtC_0Lgt0YbQtdC90YLRgA!5e0!3m2!1sru!2skz!4v1670599768457!5m2!1sru!2skz" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8082.476704301166!2d63.09953042509741!3d52.967589074593185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43cd02f77c253f25%3A0xa9a671695b210624!2z0JrQvtC_0Lgt0YbQtdC90YLRgA!5e0!3m2!1sru!2skz!4v1670599768457!5m2!1sru!2skz" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <footer>
