@@ -1,29 +1,30 @@
-  var total_pics_num = 4; // колличество изображений
-  var interval = 5000; // задержка между изображениями
-  var time_out = 1; // задержка смены изображений
-  var i = 0;
-  var timeout;
-  var opacity = 100;
-  function fade_to_next() {
-    opacity--;
-    var k = i + 1;
-    var image_now = 'image_' + i;
-    if (i == total_pics_num) k = 1;
-    var image_next = 'image_' + k;
-    document.getElementById(image_now).style.opacity = opacity/100;
-    document.getElementById(image_now).style.filter = 'alpha(opacity='+ opacity +')';
-    document.getElementById(image_next).style.opacity = (100-opacity)/100;
-    document.getElementById(image_next).style.filter = 'alpha(opacity='+ (100-opacity) +')';
-    timeout = setTimeout("fade_to_next()",time_out);
-    if (opacity === 1) {
-      opacity = 100;
-      clearTimeout(timeout);
+const imgLinks = [
+  'img/img3.jpg',
+  'img/img4.jpg',
+  'img/img1.jpg'
+];
+
+const images = [];
+let currentIndex = 0;
+
+// Загружаем все изображения в кэш браузера.
+for (let i = 0; i < imgLinks.length; i++) {
+  const img = new Image();
+  img.src = imgLinks[i];
+  images.push(img);
+}
+
+// Запускаем смену изображений с задержкой.
+const delay = 5000;
+setInterval(function() {
+  const image = document.getElementById('image');
+  image.style.opacity = 0;
+  setTimeout(function() {
+    image.src = imgLinks[currentIndex];
+    currentIndex++;
+    if (currentIndex >= imgLinks.length) {
+      currentIndex = 0;
     }
-  }
-  setInterval (
-    function() {
-      i++;
-      if (i > total_pics_num) i=1;
-      fade_to_next();
-    }, interval
-  );
+    image.style.opacity = 1;
+  }, 500); // Wait for the opacity transition to finish
+}, delay);

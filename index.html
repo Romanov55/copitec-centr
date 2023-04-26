@@ -8,8 +8,8 @@
     <meta name="description" content="КопиТек">
     <title>Копитек</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/cdda4cf947.js" crossorigin="anonymous"></script>
     <script src="index.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdda4cf947.js" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -59,17 +59,14 @@
             </div>
         </div>
         <div>
-            <a href="index.html" class="name">
-                <h1><i><span class="red-color">КопиТек Центр</span></i></h1>
-                <h2>Копировальный центр</h2>
-            </a>
-            <div id="slides">
-                <img class="slides" src='img/img1.jpg' id="image_1" title="slide1">
-                <img class="slides slides1" src='img/img2.jpg' id="image_2" title="slide2">
-                <img class="slides slides1" src='img/img3.jpg' id="image_3" title="slide3">
-                <img class="slides slides1" src='img/img4.jpg' id="image_4" title="slide4">
+                <a href="index.html" class="name">
+                    <h1><i><span class="red-color">КопиТек Центр</span></i></h1>
+                    <h2>Копировальный центр</h2>
+                </a>
+                <div id="slides">
+                    <img class="slides" id="image" src="img/img1.jpg" alt="image">
+                </div>
             </div>
-        </div>
     </header>
     <section>
         <div class="black-menu">
@@ -211,19 +208,5 @@
             <p id="creator">Создание и продвижение - Romanov20let@gmail.com</p>
         </div>
     </footer>
-    <DIV ID = "toTop" > ^ Наверх </ DIV >
 </body>
-<script type="text/javascript">
-$(function() {
-    $(window).scroll(function() {
-        if($(this).scrollTop() != 0) {
-            $('#toTop').fadeIn();
-        } else {
-            ('#toTop').fadeOut();
-        }
-    });
-    $('#toTop').click(function() {
-        $('body,html').animate({scrollTop:0},800);
-    });
-});
-</script>
+</html>
