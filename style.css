@@ -29,6 +29,28 @@ body {
     height: 60px;
     background-color: #212529;
 }
+.servicePriceButton {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.servicePriceButton:hover {
+    background-color: white;
+    border: 2px solid #4CAF50;
+    color: black;
+}
+
+.servicePrice {
+    display: flex;
+    justify-content: space-around;
+}
 
     .top-info {
         padding: 0 10vw;
