@@ -12,15 +12,15 @@
 
 body {
     margin: 0;
-    /* display: flex;
-    flex-direction: column; */
-    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Futura-Bold', sans-serif;
 }
 
-/* section {
+section {
     flex-grow: 1;
-} */
+}
 
 /* Стили для модального окна */
 .modal {
@@ -286,7 +286,7 @@ body {
     }
 
 footer {
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
     margin: 0 0 0 0;
     color: white;
     background-color: rgb(37, 33, 33);
