@@ -22,10 +22,6 @@ section {
     flex-grow: 1;
 }
 
-footer {
-    flex-shrink: 0;
-}
-
 /* Стили для модального окна */
 .modal {
   display: none;
@@ -290,6 +286,7 @@ footer {
     }
 
 footer {
+    flex-shrink: 0;
     margin: 0 0 0 0;
     color: white;
     background-color: rgb(37, 33, 33);
