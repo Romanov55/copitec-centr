@@ -10,6 +10,13 @@
   src: url("../fonts/Futura/futura-pt-cond-book-oblique.ttf");
 }
 
+.pos {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 100px;
+}
+
 body {
     margin: 0;
     display: flex;
